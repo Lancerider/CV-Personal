@@ -1,0 +1,11 @@
+
+RewriteOptions inherit
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^jorgepalacios\.pro$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jorgepalacios\.pro$
+RewriteRule ^/?$ "https\:\/\/www\.jorgepalacios\.pro\/" [R=301,L]
+
