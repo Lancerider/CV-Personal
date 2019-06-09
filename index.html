@@ -1,109 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Jorge Palacios - Programador</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/estilos.css">
-</head>
+    <link
+      href="./assets/images/favicon-16x16.png"
+      rel="icon"
+      type="image/png"
+    />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top" id="navbar">
+      <a class="navbar-brand" href="#">
+        <!--<img src="./assets/images/favicon-32x32.png" alt="Logo">-->
+        Jorge Palacios
+        <span>Full-Stack (javascript)</span>
+      </a>
+      <div class="nav_links">
+        <a
+          alternate="Link to Instagram"
+          class="link-sm"
+          href="https://github.com/Lancerider"
+          target="blank"
+        >
+          <img alt="" src="./assets/images/github-icon-white-png.png"
+        /></a>
 
-<body>
-        <!-- Header -->
-        <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <!--<img src="images/favicon-32x32.png" alt="Logo">--> Jorge Palacios <span>Front-End (Javascript)</span> 
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-  
-               <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ml-auto">
-                <!--  <li class="nav-item">
-                    <a class="nav-link" href="#main">La conferencia <span class="sr-only">(current)</span></a>
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link SM-button twitter" href="https://twitter.com/JorgePalaciosCL" target="blank" alternate="Hola" ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link SM-button linkedin" href="https://www.linkedin.com/in/jorge-palacios-ing-mecanico/" target="blank" alternate="Hola" ></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link SM-button instagram" href="https://instagram.com/JorgePalaciosCL" target="blank" alternate="Hola" ></a>
-                  </li>
-                </ul>
-            </div> 
-            </div>
-          </nav>
-  
-          <!--/Header-->
-  
-          <section>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-                        </ol>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./images/Certificates/500/diploma-fundamentos-matematicas.jpg" class="w-25 d-block" alt="...">
-                            <img src="./images/Certificates/500/diploma-calculo-datos.jpg" class="w-25 d-block" alt="...">
-                            <img src="./images/Certificates/500/diploma-calculo-multivariable.jpg" class="w-25 d-block" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                              <img src="./images/Certificates/500/diploma-discretas.jpg" class="w-25 d-block" alt="...">
-                              <img src="./images/Certificates/500/diploma-probabilidad-estadistica.jpg" class="w-25 d-block" alt="...">
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>         
-          </section>
-          <section class="hero">
-                    <h1><strong>Jorge Palacios</strong> <br> Desarrollador <strong>Java</strong> <br> <u>Freelancer</u></h1>
-                    <!-- <img src="images/Espacio.jpg" alt="Espacio de Trabajo"> -->
-                </section>
-                <section id="Portafolio" class="portfolio">
-                    
-                </section>
+        <a
+          alternate="Link to Twitter"
+          class="link-sm"
+          href="https://twitter.com/JorgePalaciosCL"
+          target="blank"
+        >
+          <img alt="" src="./assets/images/Social-Media-TWITTER.png"
+        /></a>
 
-                <section id="Experiencia">
-                 
-                </section>
-                <section id="Contacto" class="contact">
-               
-                </section>
+        <a
+          alternate="Link to Linkedin"
+          class="link-sm"
+          href="https://www.linkedin.com/in/jorge-palacios-ing-mecanico/"
+          target="blank"
+        >
+          <img alt="" src="./assets/images/Social-Media-INSTAGRAM.png"
+        /></a>
 
+        <a
+          alternate="Link to Instagram"
+          class="link-sm"
+          href="https://instagram.com/JorgePalaciosCL"
+          target="blank"
+        >
+          <img alt="" src="./assets/images/Social-Media-LINKEDIN.png"
+        /></a>
+      </div>
+    </nav>
 
-                <footer class="footer">
-                    <div>
-                        <p>Curso Desarrollo Web Online 2018 <img src="./images/favicon-16x16.png" alt="Foto"></p>
-                    </div>
-                    <div>
-                        <p> Designed by <a href="https://twitter.com/JorgePalaciosCL">@JORGEPALACIOSCL</a></p>
-                    </div>
-                    </section>
-
-
-            </div>
+    <div class="container-grid">
+      <section class="hero">
+        <div class="hero_data">
+          <h1>
+            <strong>Jorge Palacios</strong>
+          </h1>
+          <h4>
+            <p class="career">
+              Desarrollador
+              <strong>Web</strong>
+            </p>
+            <p class="Sub-career">Ingeniero Mecánico / Emprendedor</p>
+          </h4>
         </div>
-    </div>
-</body>
+        <!-- STARTING CAROUSEL -->
 
+        <div class="hero_projects">
+          <div
+            class="carousel slide"
+            data-ride="carousel"
+            id="carouselExampleIndicators"
+          >
+            <ol class="carousel-indicators">
+              <li
+                class="active"
+                data-slide-to="0"
+                data-target="#carouselExampleIndicators"
+              ></li>
+              <li
+                data-slide-to="1"
+                data-target="#carouselExampleIndicators"
+              ></li>
+              <li
+                data-slide-to="2"
+                data-target="#carouselExampleIndicators"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://jorgepalacios.pro/bootstrap"
+                  ><img
+                    alt="First slide"
+                    class="d-block w-100"
+                    src="./assets/images/Proyecto-Bootstrap.jpg"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Second slide"
+                  class="d-block w-60"
+                  src="./assets/images/Certificates/diploma-vuejs-carrera-slide.png"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  alt="Third slide Proyecto Loopback Documentation"
+                  class="d-block w-100"
+                  src="./assets/images/Proyecto-Loopback.jpg"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              data-slide="prev"
+              href="#carouselExampleIndicators"
+              role="button"
+            >
+              <span
+                aria-hidden="true"
+                class="carousel-control-prev-icon"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              data-slide="next"
+              href="#carouselExampleIndicators"
+              role="button"
+            >
+              <span
+                aria-hidden="true"
+                class="carousel-control-next-icon"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- ENDING CAROUSEL -->
+
+        <div class="hero_why-data">
+          <span data-target="#exampleModal" data-toggle="modal">Vue</span>
+          <span>Bootstrap</span>
+          <span>CCS</span>
+          <span>Javascript</span>
+          <span>MySQL</span>
+          <span>PHP</span>
+          <span>JAVA</span>
+          <span>Back-end</span>
+          <span>Front-end</span>
+          <span>Photoshop</span>
+          <span>Fundamentos</span>
+          <span>Inglés</span>
+        </div>
+      </section>
+      <section class="portfolio" id="Portafolio">
+        <!-- Modal -->
+        <div
+          aria-hidden="true"
+          aria-labelledby="exampleModalLabel"
+          class="modal fade"
+          id="exampleModal"
+          role="dialog"
+          tabindex="-1"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content" role="document">
+              <div
+                class="carousel slide"
+                data-ride="carousel"
+                id="carouselExampleControls"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a
+                      alt="Ver detalles del curso Vue Básico"
+                      href="https://platzi.com/cursos/vuejs/"
+                    >
+                      <img
+                        alt="First slide"
+                        class="d-block w-100"
+                        src="./assets/images/Certificates/diploma-vuejs.png"
+                    /></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a
+                      alt="Ver detalles del curso Vue Avanzado"
+                      href="https://platzi.com/cursos/vuejs-profesional/"
+                    >
+                      <img
+                        alt="Third slide"
+                        class="d-block w-100"
+                        src="./assets/images/Certificates/diploma-vuejs-avanzado.png"
+                    /></a>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  data-slide="prev"
+                  href="#carouselExampleControls"
+                  role="button"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="carousel-control-prev-icon"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  data-slide="next"
+                  href="#carouselExampleControls"
+                  role="button"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="carousel-control-next-icon"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Modal -->
+      <section id="Experiencia">
+        <span class="lt-line-clamp__raw-line">
+          <h3>¿Qué necesitas saber de mi?</h3>
+          <br />
+          Mi mayor habilidad es la estrategia de negocios. <br />
+          <br />
+          En Venezuela tenía mi propia empresa de comercio online, que pasó a
+          ser una fabrica de carteras y productos textiles de mujer. Hasta venir
+          a Chile.<br />
+          <br />
+          Llevo 15 años sabiendo programar. (Fui freelance por un tiempo.
+          Aprendí HTML, CSS, Javascript, PHP, MySQL, Visual Basic 6, Action
+          Script 3 y Java)<br />
+          <br />
+          Llevo 10 meses aprendiendo a programar profesionalmente. Para generar
+          MVCs en mis tiempos libres. Dado que deseo que mis próximos
+          emprendimientos sean digitales. <br />
+          <br />
+          Soy Ingeniero Mecánico, con conocimientos de matemática avanzada.<br />
+          <br />
+          Tengo una capacidad de análisis enfocado a resolución de problemas que
+          difícilmente encontrarás en otros programadores, incluso entre
+          ingenieros.<br />
+          <br />
+          Aprendí durante 3 meses a programar java y llegué a nivel intermedio.
+          Lo dejé de lado para enfocarme en Javascript, para poder crear
+          aplicaciones en todos los ámbitos con pocos cambios (móvil, desktop,
+          web del lado del cliente y del servidor)<br />
+          <br />
+          <br />
+          <h3>¿Ventajas de contratarme?</h3>
+          <br />
+          DETERMINACIÓN. Llevo 21 cursos de Platzi especializados en
+          programación realizados en noches y fines de semana para avanzar hacia
+          mi meta.<br />
+          <br />
+          Actualmente estoy en modo estudiante, así que mi capacidad de
+          aprendizaje y adaptación están por encima que el programador
+          promedio.<br />
+          <br />
+          Poseo experiencia real en negocios como emprendedor y manejo de
+          clientes.<br />
+          <br />
+          Como Ingeniero, me enfoco en resolver el problemas. En hacer todo más
+          fácil. Y crear sistemas para que no vuelvan a repetirse.<br />
+          <br />
+          Mi capacidad de análisis y conocimientos de matemáticas no son fáciles
+          de encontrar en programadores.<br />
+          <br />
+          Inglés Avanzado. Resolver problemas y aprender cosas nuevas se
+          facilita mucho gracias a ello.<br />
+          <br />
+          <br />
+          <h3>¿Desventajas de Contratarme?</h3>
+          <br />
+          Poca experiencia en algún lenguaje en específico. <br />
+          <br />
+          A veces pensar fuera de la caja se vuelve un problema si quien me
+          supervisa no le gustan las cosas diferentes.
+        </span>
+      </section>
+      <section class="contact" id="Contacto"></section>
+
+      <footer class="footer">
+        <div>
+          <h4>Portafolio Web</h4>
+        </div>
+        <div>
+          <p>
+            Designed by
+            <a href="https://twitter.com/JorgePalaciosCL">@JORGEPALACIOSCL</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
